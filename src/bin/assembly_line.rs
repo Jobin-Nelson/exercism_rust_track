@@ -15,6 +15,10 @@ fn working_items_per_minute(speed: u8) -> u32 {
 
 fn main() {
     for speed in 0..11 {
-        println!("speed: {}, working_itmes_per_hour: {}", speed, working_items_per_minute(speed as u8));
+        println!(
+            "speed: {}, working_itmes_per_hour: {}",
+            speed,
+            working_items_per_minute(speed as u8)
+        );
     }
 }

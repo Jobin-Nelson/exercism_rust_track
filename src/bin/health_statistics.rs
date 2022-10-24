@@ -6,11 +6,7 @@ struct User {
 
 impl User {
     fn new(name: String, age: u32, weight: f32) -> Self {
-        Self {
-            name,
-            age,
-            weight,
-        }
+        Self { name, age, weight }
     }
 
     fn name(&self) -> &str {

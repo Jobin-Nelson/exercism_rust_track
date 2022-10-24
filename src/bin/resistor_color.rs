@@ -1,5 +1,5 @@
-use int_enum::IntEnum;
 use enum_iterator::{all, Sequence};
+use int_enum::IntEnum;
 
 #[derive(Debug, PartialEq, Copy, Clone, Sequence, IntEnum)]
 #[repr(usize)]
@@ -36,6 +36,10 @@ fn main() {
     let value = 7;
 
     println!("Value for color {:?} is {}", color, color_to_value(color));
-    println!("Color for value {} is {}", value, value_to_color_string(value));
+    println!(
+        "Color for value {} is {}",
+        value,
+        value_to_color_string(value)
+    );
     println!("List of colors available are {:?}", colors());
 }
