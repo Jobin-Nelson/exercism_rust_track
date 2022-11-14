@@ -1,5 +1,4 @@
-#[derive(Debug)]
-enum CalculatorInput {
+pub enum CalculatorInput {
     Add,
     Subtract,
     Multiply,
@@ -7,7 +6,7 @@ enum CalculatorInput {
     Value(i32),
 }
 
-fn evaluate(inputs: &[CalculatorInput]) -> Option<i32> {
+pub fn evaluate(inputs: &[CalculatorInput]) -> Option<i32> {
     use CalculatorInput::*;
 
     let mut stack: Vec<i32> = Vec::new();
@@ -43,12 +42,26 @@ fn evaluate(inputs: &[CalculatorInput]) -> Option<i32> {
     }
 }
 
-fn main() {
-    use CalculatorInput::*;
-    
-    let input1 = [Value(2), Value(2), Add];
-    let input2 = [Value(4), Value(8), Add, Value(7), Value(5), Subtract, Divide];
+#[cfg(test)]
+mod test {
+    use super::*;
+    use super::CalculatorInput::*;
 
-    assert_eq!(evaluate(&input1), Some(4));
-    assert_eq!(evaluate(&input2), Some(6));
+    #[test]
+    fn evaluate_four() {
+        let input = [Value(2), Value(2), Add];
+        assert_eq!(evaluate(&input), Some(4));
+    }
+
+    #[test]
+    fn evaluate_six() {
+        let input = [Value(4), Value(8), Add, Value(7), Value(5), Subtract, Divide];
+        assert_eq!(evaluate(&input), Some(6));
+    }
+
+    #[test]
+    fn evaluate_9() {
+        let input = [Value(3), Value(3), Multiply];
+        assert_eq!(evaluate(&input), Some(9));
+    }
 }

@@ -3,7 +3,7 @@ use int_enum::IntEnum;
 
 #[derive(Debug, PartialEq, Copy, Clone, Sequence, IntEnum)]
 #[repr(usize)]
-enum ResistorColor {
+pub enum ResistorColor {
     Black = 0,
     Brown = 1,
     Red = 2,
@@ -16,30 +16,33 @@ enum ResistorColor {
     White = 9,
 }
 
-fn color_to_value(color: ResistorColor) -> u32 {
+pub fn color_to_value(color: ResistorColor) -> u32 {
     ResistorColor::int_value(color) as u32
 }
 
-fn value_to_color_string(value: usize) -> String {
+pub fn value_to_color_string(value: usize) -> String {
     match ResistorColor::from_int(value) {
         Ok(resistor) => format!("{:?}", resistor),
         Err(_) => "value out of range".to_string(),
     }
 }
 
-fn colors() -> Vec<ResistorColor> {
+pub fn colors() -> Vec<ResistorColor> {
     all::<ResistorColor>().collect()
 }
 
-fn main() {
-    let color = ResistorColor::Blue;
-    let value = 7;
+#[cfg(test)]
+mod test {
+    use super::*;
 
-    println!("Value for color {:?} is {}", color, color_to_value(color));
-    println!(
-        "Color for value {} is {}",
-        value,
-        value_to_color_string(value)
-    );
-    println!("List of colors available are {:?}", colors());
+    #[test]
+    pub fn color_to_value_seven() {
+        let color = ResistorColor::Blue;
+        assert_eq!(color_to_value(color), 6);
+    }
+    
+    #[test]
+    pub fn value_to_color_string_yellow() {
+        assert_eq!(value_to_color_string(4), "Yellow");
+    }
 }
