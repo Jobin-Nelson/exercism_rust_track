@@ -8,4 +8,5 @@
 // pub mod reverse_string;
 // pub mod role_playing_game;
 // pub mod sublist;
-
+// pub mod clock;
+pub mod anagram;
