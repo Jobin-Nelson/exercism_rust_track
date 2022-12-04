@@ -9,4 +9,6 @@
 // pub mod role_playing_game;
 // pub mod sublist;
 // pub mod clock;
-pub mod anagram;
+// pub mod anagram;
+// pub mod space_age;
+pub mod minesweeper;
