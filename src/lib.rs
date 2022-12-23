@@ -11,4 +11,6 @@
 // pub mod clock;
 // pub mod anagram;
 // pub mod space_age;
-pub mod minesweeper;
+// pub mod minesweeper;
+// pub mod luhn;
+pub mod parallel_letter_frequency;
