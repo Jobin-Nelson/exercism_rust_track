@@ -17,4 +17,5 @@
 // pub mod macros;
 // pub mod poker;
 // pub mod forth;
-pub mod armstrong_number;
+// pub mod armstrong_number;
+pub mod beer_song;
