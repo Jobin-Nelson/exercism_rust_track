@@ -20,4 +20,7 @@
 // pub mod armstrong_number;
 // pub mod beer_song;
 // pub mod difference_of_squares;
-pub mod grains;
+// pub mod grains;
+// pub mod leap;
+// pub mod nth_prime;
+pub mod prime_factors;
