@@ -27,4 +27,6 @@
 // pub mod proverb;
 // pub mod raindrops;
 // pub mod sum_of_multiples;
-pub mod bob;
+// pub mod bob;
+// pub mod high_scores;
+pub mod matching_brackets;
