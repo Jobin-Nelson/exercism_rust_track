@@ -32,4 +32,8 @@
 // pub mod matching_brackets;
 // pub mod acronym;
 // pub mod all_your_base;
-pub mod allergies;
+// pub mod allergies;
+// pub mod alphametics;
+// pub mod binary_search;
+// pub mod bowling;
+pub mod dot_dsl;
