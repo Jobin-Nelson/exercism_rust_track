@@ -38,4 +38,5 @@
 // pub mod bowling;
 // pub mod dot_dsl;
 // pub mod etl;
-pub mod grade_school;
+// pub mod grade_school;
+pub mod collatz_conjecture;
