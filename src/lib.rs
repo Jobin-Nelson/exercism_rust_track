@@ -39,4 +39,5 @@
 // pub mod dot_dsl;
 // pub mod etl;
 // pub mod grade_school;
-pub mod collatz_conjecture;
+// pub mod collatz_conjecture;
+pub mod diffie_hellman;
