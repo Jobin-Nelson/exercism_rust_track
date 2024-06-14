@@ -40,4 +40,5 @@
 // pub mod etl;
 // pub mod grade_school;
 // pub mod collatz_conjecture;
-pub mod diffie_hellman;
+//pub mod diffie_hellman;
+pub mod hamming;
