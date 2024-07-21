@@ -44,4 +44,6 @@
 // pub mod hamming;
 // pub mod series;
 // pub mod kindergarten_garden;
-pub mod eliuds_eggs;
+// pub mod eliuds_eggs;
+//pub mod isbn_verifier;
+pub mod isogram;
