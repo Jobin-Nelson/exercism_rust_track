@@ -46,4 +46,6 @@
 // pub mod kindergarten_garden;
 // pub mod eliuds_eggs;
 //pub mod isbn_verifier;
-pub mod isogram;
+//pub mod isogram;
+//pub mod nucleotide_count;
+pub mod pass_io;
