@@ -50,4 +50,5 @@
 //pub mod nucleotide_count;
 //pub mod paas_io;
 //pub mod palindrome_products;
-pub mod is_pangram;
+//pub mod is_pangram;
+pub mod pascals_triangle;
