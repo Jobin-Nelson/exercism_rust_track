@@ -52,4 +52,11 @@
 //pub mod palindrome_products;
 //pub mod is_pangram;
 //pub mod pascals_triangle;
-pub mod perfect_numbers;
+//pub mod perfect_numbers;
+//pub mod pig_latin;
+//pub mod queen_attack;
+//pub mod rna_transcription;
+//pub mod run_length_encoding;
+//pub mod saddle_points;
+//pub mod say;
+pub mod scrabble_score;
