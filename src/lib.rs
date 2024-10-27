@@ -59,4 +59,5 @@
 //pub mod run_length_encoding;
 //pub mod saddle_points;
 //pub mod say;
-pub mod scrabble_score;
+//pub mod scrabble_score;
+pub mod sieve;
